@@ -1,0 +1,112 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--color-charcoal: #1a1a1a;
+	--color-charcoal-deep: #141414;
+	--color-amber: #c8832a;
+	--color-cream: #f5f0e8;
+	--font-display: 'Playfair Display', Georgia, serif;
+	--font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+	--charcoal: #1a1a1a;
+	--charcoal-deep: #141414;
+	--surface: #242120;
+	--amber: #c8832a;
+	--amber-bright: #d9943b;
+	--amber-soft: rgba(200, 131, 42, 0.35);
+	--cream: #f5f0e8;
+	--cream-60: rgba(245, 240, 232, 0.64);
+	--cream-40: rgba(245, 240, 232, 0.4);
+	--ink: #1a1a1a;
+	--ink-75: rgba(26, 26, 26, 0.78);
+	--ease: cubic-bezier(0.16, 1, 0.3, 1);
+	--radius: 16px;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 96px;
+}
+
+body {
+	background: var(--charcoal);
+	color: var(--cream);
+	font-family: var(--font-body);
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	overflow-x: clip;
+}
+
+::selection {
+	background: var(--amber);
+	color: var(--charcoal);
+}
+
+a:focus-visible,
+button:focus-visible {
+	outline: 2px solid var(--amber);
+	outline-offset: 3px;
+	border-radius: 4px;
+}
+
+/* slim branded scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	background: var(--charcoal-deep);
+}
+::-webkit-scrollbar-thumb {
+	background: #3c3833;
+	border-radius: 8px;
+	border: 2px solid var(--charcoal-deep);
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--amber);
+}
+
+/* cinematic film grain over everything except modals */
+body::after {
+	content: '';
+	position: fixed;
+	inset: 0;
+	z-index: 5;
+	pointer-events: none;
+	opacity: 0.035;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* scroll-reveal primitives — class is toggled at runtime by the reveal action */
+[data-reveal] {
+	opacity: 0;
+	transform: translateY(30px);
+	transition:
+		opacity 0.9s var(--ease),
+		transform 0.9s var(--ease);
+}
+[data-reveal].revealed {
+	opacity: 1;
+	transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+	[data-reveal] {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
