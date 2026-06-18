@@ -2,13 +2,24 @@
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import type { Action } from 'svelte/action';
+	import heroImage from '$lib/assets/First page.jpg';
+	import imgFirstAlt from '$lib/assets/First page (1).jpg';
+	import imgAssortedCookies from '$lib/assets/Assorted Dreamers cookies (matcha, golden biscoff, red velvet, Triple chocolate ,Og cookies, campfire Smores).jpg';
+	import imgBanoffee from '$lib/assets/Banana spring roll Banoffee.png';
+	import imgBbqHoneyButter from '$lib/assets/Barbeque and honey butter flavor.jpg';
+	import imgChickenSequence from '$lib/assets/Chicken yard sequence.jpg';
+	import imgChocCookieBites from '$lib/assets/Chocolate flavor cookie bites.jpg';
+	import imgCookieBites from '$lib/assets/Cookie bites.jpg';
+	import imgGoldenBiscoff from '$lib/assets/Golden biscoff with cream cheese interior.jpg';
+	import imgKrustySliders from '$lib/assets/Krusty Sliders.jpg';
+	import imgStrawberryCookies from '$lib/assets/Strawberry chocolate, triple chocolate, Ube creamcheese, OG chocolate Cookies.jpg';
+	import imgChickenYardMeal from '$lib/assets/The chicken yard meal.jpg';
+	import imgChickenYard from '$lib/assets/The chicken yard.jpg';
+	import imgChickenCheeseBbq from '$lib/assets/The chicken yard’s cheese and barbeque flavor.jpg';
 
 	/* ------------------------------------------------------------------ */
 	/*  Content                                                            */
 	/* ------------------------------------------------------------------ */
-
-	const unsplash = (id: string, w = 900) =>
-		`https://images.unsplash.com/${id}?q=80&w=${w}&auto=format&fit=crop`;
 
 	const navLinks = [
 		{ href: '#creations', label: 'Creations' },
@@ -20,80 +31,80 @@
 
 	const dishes = [
 		{
-			id: 'photo-1467003909585-2f8a72700288',
-			cat: 'From the Sea',
-			name: 'Ember-Seared Salmon',
-			desc: 'Crisp skin, garden salsa verde, spinach wilted in brown butter.'
+			img: imgAssortedCookies,
+			cat: 'Dreamers Cookies',
+			name: 'The Dreamers Box',
+			desc: 'Matcha, golden biscoff, red velvet, triple chocolate, OG and campfire s’mores — six moods in one box.'
 		},
 		{
-			id: 'photo-1476124369491-e7addf5db371',
-			cat: 'First Course',
-			name: 'Wild Mushroom Risotto',
-			desc: 'Carnaroli rice, porcini and aged parmesan, finished with a quiet breath of truffle.'
+			img: imgGoldenBiscoff,
+			cat: 'Signature Cookie',
+			name: 'Golden Biscoff',
+			desc: 'A molten cream-cheese heart wrapped in caramelised biscoff and a soft-baked cookie shell.'
 		},
 		{
-			id: 'photo-1473093295043-cdd812d0e601',
-			cat: 'From the Garden',
-			name: 'Garden Pesto Farfalle',
-			desc: 'Bow-ties folded through mortar-pounded basil pesto, heirloom cherry tomatoes.'
+			img: imgStrawberryCookies,
+			cat: 'The Cookie Lineup',
+			name: 'The Stuffed Four',
+			desc: 'Strawberry chocolate, triple chocolate, ube cream cheese and OG chocolate — thick and gooey.'
 		},
 		{
-			id: 'photo-1544025162-d76694265947',
-			cat: 'Slow & Smoked',
-			name: 'Twelve-Hour Short Rib',
-			desc: 'Oak smoke, a burnt-honey glaze, and patience you can taste.'
+			img: imgKrustySliders,
+			cat: 'The Chicken Yard',
+			name: 'Krusty Sliders',
+			desc: 'Crunchy fried chicken, soft buns and house sauce — small in size, loud in flavour.'
 		},
 		{
-			id: 'photo-1546069901-ba9599a7e63c',
-			cat: 'Market Lunch',
-			name: 'The Harvest Bowl',
-			desc: 'Whatever the farmers were proudest of that morning, citrus vinaigrette.'
+			img: imgChickenYardMeal,
+			cat: 'The Chicken Yard',
+			name: 'The Full Yard Meal',
+			desc: 'Golden fried chicken piled high with all the sides, made for the whole table to share.'
 		},
 		{
-			id: 'photo-1565958011703-44f9829ba187',
+			img: imgBanoffee,
 			cat: 'Sweet Ending',
-			name: 'Strawberry Mascarpone Cloud',
-			desc: 'Macerated berries, vanilla-bean mascarpone, toasted almond crumble.'
+			name: 'Banoffee Spring Rolls',
+			desc: 'Banana and toffee folded into crisp spring-roll pastry, fried until shattering-golden.'
 		}
 	];
 
 	const gallery = [
-		{ id: 'photo-1579584425555-c3ce17fd4351', caption: 'Omakase Night — hand-rolled maki' },
-		{ id: 'photo-1567620905732-2d1ec7ab7445', caption: 'Saturday Stack — brown butter & berries' },
-		{ id: 'photo-1600891964092-4316c288032e', caption: 'Hanger Steak — twice-cooked frites' },
-		{ id: 'photo-1455619452474-d2be8b1e70cd', caption: 'Slow Sunday Curry — toasted spices' },
-		{ id: 'photo-1509440159596-0249088772ff', caption: 'Wild Yeast — a 36-hour sourdough' },
-		{ id: 'photo-1488477181946-6428a0291777', caption: 'Panna Cotta, Macerated Berries' },
-		{ id: 'photo-1514362545857-3bc16c4c7d1b', caption: 'Amber Hour — the house old fashioned' },
-		{ id: 'photo-1512621776951-a57141f2eefd', caption: 'First Harvest — shaved market greens' },
-		{ id: 'photo-1568901346375-23c9450c58cd', caption: 'The Brass Burger — caramelised onion, aged cheddar' },
-		{ id: 'photo-1432139555190-58524dae6a55', caption: 'Cider Pork Chop — burnt apples & broccolini' }
+		{ img: imgCookieBites, caption: 'Cookie Bites — pop-in-your-mouth minis' },
+		{ img: imgChocCookieBites, caption: 'Chocolate Cookie Bites — double-dark batch' },
+		{ img: imgChickenYard, caption: 'The Chicken Yard — straight from the fryer' },
+		{ img: imgChickenCheeseBbq, caption: 'Cheese & Barbeque — the loaded flavour' },
+		{ img: imgBbqHoneyButter, caption: 'Barbeque & Honey Butter — sticky and sweet' },
+		{ img: imgChickenSequence, caption: 'The Chicken Yard — from yard to plate' },
+		{ img: imgAssortedCookies, caption: 'Dreamers Box — the full assortment' },
+		{ img: imgGoldenBiscoff, caption: 'Golden Biscoff — that cream-cheese core' },
+		{ img: imgStrawberryCookies, caption: 'Stuffed Cookies — the flavour lineup' },
+		{ img: imgKrustySliders, caption: 'Krusty Sliders — handheld and loaded' }
 	];
 
 	const processSteps = [
 		{
-			id: 'photo-1466637574441-749b8f19452f',
+			img: imgCookieBites,
 			step: '01',
 			title: 'The Ingredients',
-			desc: 'Everything starts at the market — pressing, smelling, asking questions. If the produce isn’t proud, it doesn’t come home with me.'
+			desc: 'It all starts with good butter, real chocolate and ripe fruit. If an ingredient isn’t proud, it doesn’t make the batch.'
 		},
 		{
-			id: 'photo-1551218808-94e220e084d2',
+			img: imgChickenSequence,
 			step: '02',
 			title: 'The Preparation',
-			desc: 'Knives sharp, jazz on low. Prep is the slow meditation before the fire — every cut a small promise.'
+			desc: 'Dough rested overnight, chicken brined and battered by hand. Prep is the slow part nobody sees but everybody tastes.'
 		},
 		{
-			id: 'photo-1577106263724-2c8e03bfe9cf',
+			img: imgGoldenBiscoff,
 			step: '03',
-			title: 'The Plating',
-			desc: 'Thirty quiet seconds where the kitchen holds its breath. Sauce first, height second, restraint always.'
+			title: 'The Finish',
+			desc: 'Stuffed, glazed and baked to that exact gooey centre. Sauce first, crunch second, restraint always.'
 		},
 		{
-			id: 'photo-1556910103-1c02745aae4d',
+			img: imgChickenYardMeal,
 			step: '04',
-			title: 'The Atmosphere',
-			desc: 'Steam, music and the good kind of chaos. A home kitchen at full tilt is my favourite place on earth.'
+			title: 'The Table',
+			desc: 'Boxed up, piled high and passed around. A full table mid-feast is my favourite place on earth.'
 		}
 	];
 
@@ -327,7 +338,7 @@
 	<section class="hero" id="top">
 		<div class="hero-bg" aria-hidden="true">
 			<img
-				src={unsplash('photo-1414235077428-338989a2e8c0', 2000)}
+				src={heroImage}
 				alt=""
 				fetchpriority="high"
 			/>
@@ -335,9 +346,6 @@
 		<div class="hero-frame" aria-hidden="true"></div>
 
 		<div class="wrap hero-inner" style:transform={`translateY(${heroShift}px)`} style:opacity={heroFade}>
-			<p class="hero-overline hero-up" style="animation-delay: 0.15s">
-				Home Chef &nbsp;·&nbsp; Food Creator &nbsp;·&nbsp; Storyteller
-			</p>
 			<h1 class="hero-up" style="animation-delay: 0.3s">Dave <em>Malinao</em></h1>
 			<p class="hero-tagline hero-up" style="animation-delay: 0.45s">
 				Crafting Memories Through Food
@@ -372,10 +380,10 @@
 			</div>
 
 			<div class="cards">
-				{#each dishes as dish, i (dish.id)}
+				{#each dishes as dish, i (dish.name)}
 					<figure class="card" use:reveal={{ delay: (i % 3) * 110 }}>
 						<div class="card-media">
-							<img src={unsplash(dish.id, 900)} alt={dish.name} loading="lazy" decoding="async" />
+							<img src={dish.img} alt={dish.name} loading="lazy" decoding="async" />
 						</div>
 						<span class="card-num" aria-hidden="true">0{i + 1}</span>
 						<figcaption class="card-body">
@@ -396,8 +404,8 @@
 				<div class="portrait-frame" aria-hidden="true"></div>
 				<img
 					class="portrait"
-					src={unsplash('photo-1556911220-bff31c812dba', 1000)}
-					alt="Dave Malinao cooking at the stove of his home kitchen"
+					src={imgFirstAlt}
+					alt="A signature spread from Dave Malinao's kitchen"
 					loading="lazy"
 					decoding="async"
 				/>
@@ -464,14 +472,14 @@
 			</div>
 
 			<div class="masonry">
-				{#each gallery as item, i (item.id)}
+				{#each gallery as item, i (item.caption)}
 					<button
 						class="m-item"
 						use:reveal={{ delay: (i % 3) * 90 }}
 						onclick={() => openLightbox(i)}
 						aria-label={`View ${item.caption}`}
 					>
-						<img src={unsplash(item.id, 800)} alt={item.caption} loading="lazy" decoding="async" />
+						<img src={item.img} alt={item.caption} loading="lazy" decoding="async" />
 						<span class="m-cap">
 							{item.caption}
 							<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -499,10 +507,10 @@
 			</div>
 
 			<div class="process-grid">
-				{#each processSteps as item, i (item.id)}
+				{#each processSteps as item, i (item.title)}
 					<article class="pcard" use:reveal={{ delay: i * 100 }}>
 						<div class="pcard-media">
-							<img src={unsplash(item.id, 800)} alt={item.title} loading="lazy" decoding="async" />
+							<img src={item.img} alt={item.title} loading="lazy" decoding="async" />
 						</div>
 						<div class="pcard-body">
 							<span class="pcard-step">{item.step}</span>
@@ -571,7 +579,7 @@
 				</a>
 			</div>
 
-			<p class="contact-loc">Based in Lyon · Cooking Everywhere</p>
+			<p class="contact-loc">Based in Philippines · Cooking Everywhere</p>
 		</div>
 	</section>
 </main>
@@ -617,7 +625,7 @@
 
 		<figure>
 			{#key lbIndex}
-				<img src={unsplash(lbItem.id, 1600)} alt={lbItem.caption} />
+				<img src={lbItem.img} alt={lbItem.caption} />
 			{/key}
 			<figcaption>
 				<span class="lb-cap">{lbItem.caption}</span>
@@ -968,7 +976,7 @@
 	}
 	.hero-frame {
 		position: absolute;
-		inset: 20px;
+		inset: 98px 20px 20px;
 		display: none;
 		border: 1px solid rgba(245, 240, 232, 0.14);
 		border-radius: 18px;
