@@ -34,7 +34,7 @@
 			img: imgAssortedCookies,
 			cat: 'Dreamers Cookies',
 			name: 'The Dreamers Box',
-			desc: 'Matcha, golden biscoff, red velvet, triple chocolate, OG and campfire s’mores — six moods in one box.'
+			desc: 'Matcha, golden biscoff, red velvet, triple chocolate, OG and campfire s’mores: six moods in one box.'
 		},
 		{
 			img: imgGoldenBiscoff,
@@ -46,13 +46,13 @@
 			img: imgStrawberryCookies,
 			cat: 'The Cookie Lineup',
 			name: 'The Stuffed Four',
-			desc: 'Strawberry chocolate, triple chocolate, ube cream cheese and OG chocolate — thick and gooey.'
+			desc: 'Strawberry chocolate, triple chocolate, ube cream cheese and OG chocolate: thick and gooey.'
 		},
 		{
 			img: imgKrustySliders,
 			cat: 'The Chicken Yard',
 			name: 'Krusty Sliders',
-			desc: 'Crunchy fried chicken, soft buns and house sauce — small in size, loud in flavour.'
+			desc: 'Crunchy fried chicken, soft buns and house sauce: small in size, loud in flavour.'
 		},
 		{
 			img: imgChickenYardMeal,
@@ -69,16 +69,16 @@
 	];
 
 	const gallery = [
-		{ img: imgCookieBites, caption: 'Cookie Bites — pop-in-your-mouth minis' },
-		{ img: imgChocCookieBites, caption: 'Chocolate Cookie Bites — double-dark batch' },
-		{ img: imgChickenYard, caption: 'The Chicken Yard — straight from the fryer' },
-		{ img: imgChickenCheeseBbq, caption: 'Cheese & Barbeque — the loaded flavour' },
-		{ img: imgBbqHoneyButter, caption: 'Barbeque & Honey Butter — sticky and sweet' },
-		{ img: imgChickenSequence, caption: 'The Chicken Yard — from yard to plate' },
-		{ img: imgAssortedCookies, caption: 'Dreamers Box — the full assortment' },
-		{ img: imgGoldenBiscoff, caption: 'Golden Biscoff — that cream-cheese core' },
-		{ img: imgStrawberryCookies, caption: 'Stuffed Cookies — the flavour lineup' },
-		{ img: imgKrustySliders, caption: 'Krusty Sliders — handheld and loaded' }
+		{ img: imgCookieBites, caption: 'Cookie Bites: pop-in-your-mouth minis' },
+		{ img: imgChocCookieBites, caption: 'Chocolate Cookie Bites: double-dark batch' },
+		{ img: imgChickenYard, caption: 'The Chicken Yard: straight from the fryer' },
+		{ img: imgChickenCheeseBbq, caption: 'Cheese & Barbeque: the loaded flavour' },
+		{ img: imgBbqHoneyButter, caption: 'Barbeque & Honey Butter: sticky and sweet' },
+		{ img: imgChickenSequence, caption: 'The Chicken Yard: from yard to plate' },
+		{ img: imgAssortedCookies, caption: 'Dreamers Box: the full assortment' },
+		{ img: imgGoldenBiscoff, caption: 'Golden Biscoff: that cream-cheese core' },
+		{ img: imgStrawberryCookies, caption: 'Stuffed Cookies: the flavour lineup' },
+		{ img: imgKrustySliders, caption: 'Krusty Sliders: handheld and loaded' }
 	];
 
 	const processSteps = [
@@ -109,9 +109,10 @@
 	];
 
 	const stats = [
-		{ to: 20, suffix: '+', label: 'Years at the Stove' },
-		{ to: 350, suffix: '+', label: 'Recipes Developed' },
-		{ to: 1200, suffix: '+', label: 'Plates Shared' }
+		{ to: 2, suffix: '+', label: 'Years in Professional Kitchens' },
+		{ to: 3, suffix: '', label: 'Kitchen Concepts Worked' },
+		{ to: 1, suffix: '', label: 'Michelin Bib Gourmand Kitchen' },
+		{ to: 1, suffix: '', label: 'Startup Food Business' }
 	];
 
 	/* ------------------------------------------------------------------ */
@@ -278,12 +279,12 @@
 </script>
 
 <svelte:head>
-	<title>Dave Malinao — Crafting Memories Through Food</title>
+	<title>Dave Malinao: Crafting Memories Through Food</title>
 	<meta
 		name="description"
-		content="The culinary portfolio of Dave Malinao — home chef, food creator and storyteller. Signature dishes, kitchen stories and a philosophy of slow, honest cooking."
+		content="The culinary portfolio of Dave Malinao, home chef, food creator and storyteller. Signature dishes, kitchen stories and a philosophy of slow, honest cooking."
 	/>
-	<meta property="og:title" content="Dave Malinao — Crafting Memories Through Food" />
+	<meta property="og:title" content="Dave Malinao: Crafting Memories Through Food" />
 	<meta
 		property="og:description"
 		content="A premium culinary portfolio celebrating craftsmanship, creativity and a deep love of food."
@@ -374,7 +375,7 @@
 				<p class="overline">01 · Signature Work</p>
 				<h2 class="sec-title">Featured <em>Creations</em></h2>
 				<p class="sec-sub muted">
-					Six dishes that keep earning their place at my table — scribbled on napkins, tested on
+					Six dishes that keep earning their place at my table, scribbled on napkins, tested on
 					friends, perfected long after midnight.
 				</p>
 			</div>
@@ -420,19 +421,37 @@
 				<h2 class="sec-title">The Story Behind <em>the Kitchen</em></h2>
 
 				<p class="dropcap">
-					It began in my grandmother’s kitchen in Lyon, where Sunday afternoons smelled of browned
-					butter and patience. I was seven, standing on a wooden chair, when I learned that feeding
-					someone is the shortest path to their memory.
+					It started with being a fat kid who loved eating good food. That love of eating sparked a
+					curiosity about cooking: I wanted to understand why certain food tasted the way it did,
+					what made a certain dish unforgettable.
 				</p>
 				<p>
-					There was no culinary school. There were markets at dawn, roadside grills, borrowed
-					cookbooks and a thousand burnt experiments. Twenty years on, my kitchen is still at home —
-					and that is precisely the point. I cook the way people remember being cooked for.
+					Growing up, through a screen I watched Gordon Ramsay cook and teach great techniques,
+					while also learning from Joshua Weissman’s obsession with getting it right from scratch.
+					These weren’t just videos: they were a self-directed education, one technique at a time.
 				</p>
 				<p>
-					Every plate that leaves my counter carries the same intention: honest ingredients, treated
-					slowly, shared generously. Food, for me, has never been a profession. It’s a love letter I
-					keep rewriting.
+					Our home kitchen became my first lab. I replicated dishes, building sauces from scratch,
+					studying timing, absorbing kitchen standards through repetition and failure. Nobody
+					formally taught me. The videos did.
+				</p>
+				<p>
+					Before the professional kitchens, I worked part-time as an assistant baker at a local
+					bakery in Pateros. It was there I learned that accurate measurement isn’t a formality:
+					it’s the foundation of consistent, quality food. That lesson has followed me into every
+					kitchen since.
+				</p>
+				<p>
+					When I stepped into my first professional kitchen at Cargofish BGC, everything changed.
+					Two lines running simultaneously (British and Filipino cuisine) as a working student.
+					Then came Tulum, where I worked as a line chef and relief bartender, balancing service and
+					studies through long, sleepless nights. Every kitchen taught me something the previous one
+					couldn’t.
+				</p>
+				<p>
+					Today, I work the line at LaPita, a Michelin Bib Gourmand awardee serving Levantine
+					cuisine in Makati, where the standard isn’t optional. Along the way, I built food brands
+					on the side, proving that the same discipline that runs a kitchen can build a business.
 				</p>
 
 				<div class="stats">
@@ -530,8 +549,7 @@
 			<p class="overline philo-overline">05 · Culinary Philosophy</p>
 			<span class="philo-mark" aria-hidden="true">“</span>
 			<blockquote>
-				Great cooking has never been about perfection — it’s about the moment someone takes a bite,
-				closes their eyes, and <em>feels at home</em>.
+				Food is all about <em>emotional impact</em>.
 			</blockquote>
 			<div class="philo-attr">
 				<span class="rule" aria-hidden="true"></span>
@@ -547,32 +565,26 @@
 			<p class="overline">06 · Get in Touch</p>
 			<h2 class="sec-title">Let’s Create Something <em>Memorable</em></h2>
 			<p class="sec-sub muted contact-sub">
-				Private tables, collaborations, recipe features — or simply to talk food. My inbox is always
+				Private tables, collaborations, recipe features, or simply to talk food. My inbox is always
 				warm.
 			</p>
 
 			<a class="contact-mail" href="mailto:hello@davemalinao.kitchen">hello@davemalinao.kitchen</a>
 
 			<div class="socials">
-				<a class="social" href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+				<a class="social" href="https://www.instagram.com/yg_davee/" target="_blank" rel="noreferrer" aria-label="Instagram">
 					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 						<rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
 						<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
 						<line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
 					</svg>
 				</a>
-				<a class="social" href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube">
-					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-						<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
-						<polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+				<a class="social" href="https://www.tiktok.com/@davemill_?_r=1&_t=ZS-97p8N8t1x8H" target="_blank" rel="noreferrer" aria-label="TikTok">
+					<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+						<path d="M16.6 5.82a4.28 4.28 0 0 1-3.14-1.37 4.29 4.29 0 0 1-1.03-2.72h-3.02v14.03a2.58 2.58 0 0 1-2.58 2.5 2.58 2.58 0 0 1-2.58-2.58 2.58 2.58 0 0 1 2.58-2.58c.24 0 .47.03.69.09v-3.06a5.64 5.64 0 0 0-.69-.04A5.66 5.66 0 0 0 1.27 15.7a5.66 5.66 0 0 0 5.66 5.66 5.66 5.66 0 0 0 5.66-5.66V9.01a7.3 7.3 0 0 0 4.26 1.36V7.35a4.28 4.28 0 0 1-.25-1.53z" />
 					</svg>
 				</a>
-				<a class="social" href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter">
-					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-						<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-					</svg>
-				</a>
-				<a class="social" href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">
+				<a class="social" href="https://www.facebook.com/nathanieldave.malinao" target="_blank" rel="noreferrer" aria-label="Facebook">
 					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 						<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
 					</svg>
@@ -658,7 +670,6 @@
 	.overline {
 		display: flex;
 		align-items: center;
-		gap: 14px;
 		margin: 0 0 20px;
 		color: var(--amber);
 		font-size: 0.72rem;
@@ -666,26 +677,12 @@
 		letter-spacing: 0.3em;
 		text-transform: uppercase;
 	}
-	.overline::before {
-		content: '';
-		width: 44px;
-		height: 1px;
-		background: var(--amber);
-		flex: none;
-	}
 
 	.center {
 		text-align: center;
 	}
 	.center .overline {
 		justify-content: center;
-	}
-	.center .overline::after {
-		content: '';
-		width: 44px;
-		height: 1px;
-		background: var(--amber);
-		flex: none;
 	}
 	.center .sec-sub {
 		margin-inline: auto;
@@ -1317,11 +1314,16 @@
 	}
 	.stats {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		gap: 18px;
 		margin: 42px 0 34px;
 		padding-top: 34px;
 		border-top: 1px solid rgba(26, 26, 26, 0.14);
+	}
+	@media (min-width: 480px) {
+		.stats {
+			grid-template-columns: repeat(4, 1fr);
+		}
 	}
 	.stat-num {
 		display: block;
@@ -1644,13 +1646,6 @@
 	.philo-overline {
 		justify-content: center;
 		margin-bottom: 34px;
-	}
-	.philo-overline::after {
-		content: '';
-		width: 44px;
-		height: 1px;
-		background: var(--amber);
-		flex: none;
 	}
 	.philo-mark {
 		display: block;
