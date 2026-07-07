@@ -780,16 +780,19 @@
 		height: 78px;
 	}
 	.logo {
+		flex-shrink: 0;
 		font-family: var(--font-display);
 		font-size: 1.35rem;
 		color: var(--cream);
 		text-decoration: none;
+		white-space: nowrap;
 		z-index: 2;
 	}
 	.nav-links {
 		display: none;
+		flex-shrink: 1;
 		align-items: center;
-		gap: 34px;
+		gap: clamp(16px, 2.4vw, 34px);
 		margin-left: auto;
 	}
 	.nav-links a {
@@ -821,6 +824,7 @@
 	}
 	.nav-cta {
 		display: none;
+		flex-shrink: 0;
 		padding: 11px 24px;
 		border: 1px solid var(--amber-soft);
 		border-radius: 999px;
@@ -830,6 +834,7 @@
 		letter-spacing: 0.18em;
 		text-transform: uppercase;
 		text-decoration: none;
+		white-space: nowrap;
 		transition:
 			background 0.35s,
 			color 0.35s,
@@ -1561,7 +1566,7 @@
 	.process-grid {
 		display: grid;
 		gap: 22px;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
 	}
 	.pcard {
 		border: 1px solid rgba(245, 240, 232, 0.07);
@@ -1701,6 +1706,7 @@
 	}
 	.contact-mail {
 		display: inline-block;
+		max-width: 100%;
 		margin: 26px 0 44px;
 		padding-bottom: 8px;
 		font-family: var(--font-display);
@@ -1708,6 +1714,7 @@
 		font-size: clamp(1.45rem, 4.6vw, 2.5rem);
 		color: var(--cream);
 		text-decoration: none;
+		overflow-wrap: anywhere;
 		background-image: linear-gradient(var(--amber), var(--amber));
 		background-repeat: no-repeat;
 		background-size: 0% 2px;
