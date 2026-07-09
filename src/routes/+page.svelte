@@ -515,6 +515,7 @@
 	</section>
 
 	<!-- ======================= BEHIND THE SCENES ===================== -->
+	<!--
 	<section class="section process" id="process">
 		<div class="wrap">
 			<div class="sec-head" use:reveal>
@@ -542,6 +543,7 @@
 			</div>
 		</div>
 	</section>
+	-->
 
 	<!-- ====================== CULINARY PHILOSOPHY ==================== -->
 	<section class="section philosophy" id="philosophy">
@@ -565,11 +567,9 @@
 			<p class="overline">06 · Get in Touch</p>
 			<h2 class="sec-title">Let’s Create Something <em>Memorable</em></h2>
 			<p class="sec-sub muted contact-sub">
-				Private tables, collaborations, recipe features, or simply to talk food. My inbox is always
+				Collaborations, recipe features, or simply to talk food. My inbox is always
 				warm.
 			</p>
-
-			<a class="contact-mail" href="mailto:hello@davemalinao.kitchen">hello@davemalinao.kitchen</a>
 
 			<div class="socials">
 				<a class="social" href="https://www.instagram.com/yg_davee/" target="_blank" rel="noreferrer" aria-label="Instagram">
