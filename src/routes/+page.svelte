@@ -10,6 +10,8 @@
 	import imgChickenSequence from '$lib/assets/Chicken yard sequence.jpg';
 	import imgChocCookieBites from '$lib/assets/Chocolate flavor cookie bites.jpg';
 	import imgCookieBites from '$lib/assets/Cookie bites.jpg';
+	import imgBasqueCheesecake from '$lib/assets/Classic Basque Cheesecake.jpg';
+	import imgChocMoistCake from '$lib/assets/Double Chocolate Moist Cake.jpg';
 	import imgGoldenBiscoff from '$lib/assets/Golden biscoff with cream cheese interior.jpg';
 	import imgKrustySliders from '$lib/assets/Krusty Sliders.jpg';
 	import imgStrawberryCookies from '$lib/assets/Strawberry chocolate, triple chocolate, Ube creamcheese, OG chocolate Cookies.jpg';
@@ -65,6 +67,18 @@
 			cat: 'Sweet Ending',
 			name: 'Banoffee Spring Rolls',
 			desc: 'Banana and toffee folded into crisp spring-roll pastry, fried until shattering-golden.'
+		},
+		{
+			img: imgBasqueCheesecake,
+			cat: 'Sweet Ending',
+			name: 'Classic Basque Cheesecake',
+			desc: 'Crustless, ultra-creamy, with a custard-like interior that melts in your mouth.'
+		},
+		{
+			img: imgChocMoistCake,
+			cat: 'Sweet Ending',
+			name: 'Double Chocolate Moist Cake',
+			desc: 'Perfectly moist, deeply rich double chocolate cake, fluffy yet fudgy at the center.'
 		}
 	];
 
@@ -78,7 +92,9 @@
 		{ img: imgAssortedCookies, caption: 'Dreamers Box: the full assortment' },
 		{ img: imgGoldenBiscoff, caption: 'Golden Biscoff: that cream-cheese core' },
 		{ img: imgStrawberryCookies, caption: 'Stuffed Cookies: the flavour lineup' },
-		{ img: imgKrustySliders, caption: 'Krusty Sliders: handheld and loaded' }
+		{ img: imgKrustySliders, caption: 'Krusty Sliders: handheld and loaded' },
+		{ img: imgBasqueCheesecake, caption: 'Classic Basque Cheesecake: custard-like center' },
+		{ img: imgChocMoistCake, caption: 'Double Chocolate Moist Cake: fudgy at the core' }
 	];
 
 	const processSteps = [
